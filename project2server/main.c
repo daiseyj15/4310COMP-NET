@@ -27,7 +27,7 @@ void logg(FILE *thelog4,int new_s4,char agentip4[17]);
 int main(int argc, char* arvg[])
 {
     //things to pass to the agent.c the C2C server IP, server port and the action string.
-    //All actions start with a ‘#’ and all responses start with ‘$’ followed by the data/message.
+    //All actions start with a â€˜#â€™ and all responses start with â€˜$â€™ followed by the data/message.
 
     //to keep log
     FILE *theLog;
