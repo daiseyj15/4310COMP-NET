@@ -1,0 +1,14 @@
+CFLAGS=-O3 -std=c++11
+
+simulator:  graph.o main.o
+	g++ $(CFLAGS) graph.o main.o -o simulator
+
+graph.o: graph.h graph.cpp
+	g++ $(CFLAGS) -c graph.cpp
+
+main.o:  graph.h main.cpp
+	g++ $(CFLAGS) -c main.cpp
+
+.PHONY: clean
+clean:
+	rm -f graph.o main.o simulator
